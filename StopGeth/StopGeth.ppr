@@ -1,0 +1,15 @@
+library StopGeth;
+
+{$mode objfpc}{$H+}
+
+uses
+  Windows;
+
+begin
+  GenerateConsoleCtrlEvent(CTRL_C_EVENT, 0);
+  GenerateConsoleCtrlEvent(CTRL_C_EVENT, 0);
+  GenerateConsoleCtrlEvent(CTRL_C_EVENT, 0);
+  GenerateConsoleCtrlEvent(CTRL_BREAK_EVENT, 0);
+  GenerateConsoleCtrlEvent(CTRL_BREAK_EVENT, 0);
+  GenerateConsoleCtrlEvent(CTRL_BREAK_EVENT, 0);
+end.
